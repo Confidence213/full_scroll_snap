@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:san-serif;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+
+/* i'm trying to to create custom scroll barss with colors*/
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-track{
+    width:10px;
+    background:#0c1823;
+    border-left: o solid white;
+    border-right: o solid white;
+}
+::-webkit-scrollbar-thumb{
+    background-image:linear-gradient(315deg,rgb(11, 15, 248) 0%,#a5e4b0 74%);
+    height:5%;
+    width:0;
+    transition:0.5s ease-in-out;
+    cursor:pointer;
+
+}
+/* scrollbar ends here */
+
+.container{
+    scroll-snap-type:y mandatory;
+    overflow-y:scroll;
+    height:100vh;
+}
+
+section{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    scroll-snap-align:start;
+}
+
+.one{
+background:rgb(36, 164, 138);
+}
+.two{
+background:rgb(211, 79, 79);
+}
+.three{
+background:rgb(67, 91, 175);
+}
+.four{
+background:rgb(245, 93, 23);
+}
+
+
+
+
+
+
+
+
